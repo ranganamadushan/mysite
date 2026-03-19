@@ -1,0 +1,214 @@
+{
+    "education": [
+        {
+            "degree": "Master's Degree,\u00a0Agricultural and biosystems engineering",
+            "institution": "South Dakota State University | January 2026",
+            "description": ""
+        },
+        {
+            "degree": "Master of Philosophy - MPhil,\u00a0Flexible Electronics",
+            "institution": "University of Colombo | June 2022",
+            "description": ""
+        },
+        {
+            "degree": "Bachelor of Science - BS,\u00a0Engineering Physics",
+            "institution": "University of Colombo | 2018\u00a0-\u00a02022",
+            "description": ""
+        },
+        {
+            "degree": "BIT,\u00a0Information Technology",
+            "institution": "University of Colombo School of Computing | 2019\u00a0-\u00a02022",
+            "description": ""
+        },
+        {
+            "degree": "course,\u00a0English Language and Literature/Letters",
+            "institution": "IHRA university of colombo | 2017\u00a0-\u00a02017",
+            "description": ""
+        }
+    ],
+    "experience": [
+        {
+            "role": "Research Assistant",
+            "company": "South Dakota State University | January 2026\u00a0-\u00a0Present",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "American Physical Society (APS Physics) | November 2022\u00a0-\u00a0February 2026",
+            "description": ""
+        },
+        {
+            "role": "Assistant Lecturer",
+            "company": "University of Colombo School of Computing | February 2025\u00a0-\u00a0January 2026",
+            "description": ""
+        },
+        {
+            "role": "Temporary Instructor",
+            "company": "Colombo | August 2023\u00a0-\u00a0February 2025",
+            "description": ""
+        },
+        {
+            "role": "Research Assistant",
+            "company": "University of Colombo | June 2022\u00a0-\u00a0August 2023",
+            "description": ""
+        },
+        {
+            "role": "Colombo District Ambassador\u2069 (AOI)",
+            "company": "ideamart.io | October 2021\u00a0-\u00a0January 2023",
+            "description": ""
+        },
+        {
+            "role": "Vice President",
+            "company": "Colombo Innovations and Robotics Club | February 2021\u00a0-\u00a0January 2023",
+            "description": ""
+        },
+        {
+            "role": "Treasurer",
+            "company": "February 2021\u00a0-\u00a0January 2023\u00a0(2 years) | May 2020\u00a0-\u00a0October 2021",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Sri Lanka | January 2018\u00a0-\u00a0April 2020",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Physics Society of University of Colombo | January 2018\u00a0-\u00a0June 2022",
+            "description": ""
+        },
+        {
+            "role": "Vice President",
+            "company": "Colombo Beacon | January 2020\u00a0-\u00a0January 2022",
+            "description": ""
+        },
+        {
+            "role": "Middle board member",
+            "company": "Sri Lanka | January 2019\u00a0-\u00a0January 2020",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Sri Lanka | January 2018\u00a0-\u00a0January 2019",
+            "description": ""
+        },
+        {
+            "role": "Editor",
+            "company": "Scintilla Nuclear Science Society | January 2020\u00a0-\u00a0June 2021",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Sri Lanka | June 2018\u00a0-\u00a0January 2020",
+            "description": ""
+        },
+        {
+            "role": "AIP",
+            "company": "OREL Corporation | May 2017\u00a0-\u00a0August 2017",
+            "description": ""
+        },
+        {
+            "role": "Cashier",
+            "company": "Keells | August 2016\u00a0-\u00a0January 2017",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Ananda College Science Society | January 2014\u00a0-\u00a0August 2016",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Radio Club of Ananda college | January 2012\u00a0-\u00a0January 2013",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Drama Circle of Ananda College | January 2011\u00a0-\u00a0January 2013",
+            "description": ""
+        },
+        {
+            "role": "Member",
+            "company": "Dancing Circle of Ananda Collecge | January 2007\u00a0-\u00a0December 2011",
+            "description": ""
+        }
+    ],
+    "projects": [
+        {
+            "title": "Four-Probe Measurement Machine",
+            "period": "Aug 2024 - Nov 2024",
+            "url": "https://github.com/ranganamadushan/4-probe-device",
+            "description": "Designed and built a 4-probe measurement device for material characterization.",
+            "tags": [
+                "Hardware",
+                "Instrumentation",
+                "Python"
+            ]
+        },
+        {
+            "title": "Bending Machine for Material Characterization",
+            "period": "June 2023 - Aug 2024",
+            "url": "https://github.com/ranganamadushan/bending_machine",
+            "description": "Automated machine for testing flexibility and durability of fabricated materials over thousands of cycles.",
+            "tags": [
+                "Material Science",
+                "Automation"
+            ]
+        },
+        {
+            "title": "Doctor Blading Device",
+            "period": "June 2023 - Aug 2024",
+            "url": "https://github.com/ranganamadushan/doctor_blading",
+            "description": "Custom-built hardware for uniform film deposition using the doctor blading technique.",
+            "tags": [
+                "Deposition",
+                "Hardware"
+            ]
+        },
+        {
+            "title": "Flexible Interdigitated Electrodes",
+            "period": "Jan 2021 - Apr 2022",
+            "url": "#",
+            "description": "Undergraduate research utilizing an optimized desktop inkjet printer to deposit conductive nanoparticle ink onto polymer substrates.",
+            "tags": [
+                "Inkjet Printing",
+                "Polymers"
+            ]
+        }
+    ],
+    "research_interests": [
+        "Condensed Matter Physics",
+        "Printed Flexible/Wearable Electronics",
+        "Material Physics",
+        "Wireless Communication",
+        "Sensor Fabrication"
+    ],
+    "site_visits": 120,
+    "applications": [
+        {
+            "title": "Moodle Assignment Unzipper",
+            "period": "Utility Tool",
+            "url": "https://github.com/ranganamadushan/Unzip_for_moodle/raw/master/dist/unzip.exe",
+            "description": "A lightweight customized executable built to automatically mass-unzip and organize student assignment submissions downloaded from Moodle LMS.",
+            "tags": [
+                "Python",
+                "Automation",
+                "Utility"
+            ],
+            "download": true
+        },
+        {
+            "title": "EIS Viewer App",
+            "period": "Data Analysis Utility",
+            "url": "https://ranganamadushan.github.io/EIS-/",
+            "description": "A comprehensive Python-based desktop application for visualizing, analyzing, and interactively processing Electrochemical Impedance Spectroscopy (EIS) experimental data.",
+            "tags": [
+                "Python",
+                "Data Analysis",
+                "Desktop App"
+            ],
+            "download": false,
+            "website": true
+        }
+    ]
+}

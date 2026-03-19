@@ -1,0 +1,70 @@
+[2026-03-19 16:07:54] --- Starting Portfolio Automation ---
+[2026-03-19 16:07:54] --- Parsing LinkedIn Profile.pdf ---
+[2026-03-19 16:07:54] Extracted 5 education items and 21 experience items.
+[2026-03-19 16:07:54] Updated data.json successfully with new PDF data!
+[2026-03-19 16:07:54] Loading Experience & Education from data.json...
+[2026-03-19 16:07:54] Updated education.html successfully.
+[2026-03-19 16:07:54] Updated experience.html successfully.
+[2026-03-19 16:07:54] Updated projects.html successfully.
+[2026-03-19 16:07:54] Updated applications.html successfully.
+[2026-03-19 16:07:54] Updated index.html successfully.
+[2026-03-19 16:07:54] Fetching Google Scholar data for ID: Um_jCEMAAAAJ...
+[2026-03-19 16:07:54] Updated publications.html successfully.
+[2026-03-19 16:07:54] Successfully updated publications from Google Scholar.
+[2026-03-19 16:07:54] Updated index.html successfully.
+[2026-03-19 16:07:54] Successfully injected metrics grid into index.html
+[2026-03-19 16:07:54] --- Update Complete! ---
+[2026-03-19 16:18:34] --- Starting Portfolio Automation ---
+[2026-03-19 16:18:34] --- Parsing LinkedIn Profile.pdf ---
+[2026-03-19 16:18:34] Extracted 5 education items and 21 experience items.
+[2026-03-19 16:18:34] Updated data.json successfully with new PDF data!
+[2026-03-19 16:18:34] Loading Experience & Education from data.json...
+[2026-03-19 16:18:34] Updated education.html successfully.
+[2026-03-19 16:18:34] Updated experience.html successfully.
+[2026-03-19 16:18:34] Updated projects.html successfully.
+[2026-03-19 16:18:34] Updated applications.html successfully.
+[2026-03-19 16:18:34] Updated index.html successfully.
+[2026-03-19 16:18:34] Fetching Google Scholar data for ID: Um_jCEMAAAAJ...
+[2026-03-19 16:18:35] Updated publications.html successfully.
+[2026-03-19 16:18:35] Successfully updated publications from Google Scholar.
+[2026-03-19 16:18:35] Updated index.html successfully.
+[2026-03-19 16:18:35] Successfully injected metrics grid into index.html
+[2026-03-19 16:18:35] --- Update Complete! ---
+[2026-03-19 16:18:35] --- Starting Auto-Deploy to GitHub ---
+[2026-03-19 16:18:35] Failed to auto-deploy to Github: Command '['C:\\Program Files\\Git\\cmd\\git.exe', 'add', '.']' returned non-zero exit status 128.
+[2026-03-19 16:28:04] --- Starting Portfolio Automation ---
+[2026-03-19 16:28:04] --- Parsing LinkedIn Profile.pdf ---
+[2026-03-19 16:28:04] Extracted 5 education items and 21 experience items.
+[2026-03-19 16:28:04] Updated data.json successfully with new PDF data!
+[2026-03-19 16:28:04] Loading Experience & Education from data.json...
+[2026-03-19 16:28:04] Updated education.html successfully.
+[2026-03-19 16:28:04] Updated experience.html successfully.
+[2026-03-19 16:28:04] Updated projects.html successfully.
+[2026-03-19 16:28:04] Updated applications.html successfully.
+[2026-03-19 16:28:04] Updated index.html successfully.
+[2026-03-19 16:28:04] Fetching Google Scholar data for ID: Um_jCEMAAAAJ...
+[2026-03-19 16:28:05] Updated publications.html successfully.
+[2026-03-19 16:28:05] Successfully updated publications from Google Scholar.
+[2026-03-19 16:28:05] Updated index.html successfully.
+[2026-03-19 16:28:05] Successfully injected metrics grid into index.html
+[2026-03-19 16:28:05] --- Update Complete! ---
+[2026-03-19 16:28:05] --- Starting Auto-Deploy to GitHub ---
+[2026-03-19 16:28:06] Pushing files securely to GitHub repository...
+[2026-03-19 16:28:06] Failed to auto-deploy to Github: Command '['C:\\Program Files\\Git\\cmd\\git.exe', 'push']' returned non-zero exit status 128.
+[2026-03-19 16:28:43] --- Starting Portfolio Automation ---
+[2026-03-19 16:28:43] --- Parsing LinkedIn Profile.pdf ---
+[2026-03-19 16:28:43] Extracted 5 education items and 21 experience items.
+[2026-03-19 16:28:43] Updated data.json successfully with new PDF data!
+[2026-03-19 16:28:43] Loading Experience & Education from data.json...
+[2026-03-19 16:28:43] Updated education.html successfully.
+[2026-03-19 16:28:43] Updated experience.html successfully.
+[2026-03-19 16:28:43] Updated projects.html successfully.
+[2026-03-19 16:28:43] Updated applications.html successfully.
+[2026-03-19 16:28:43] Updated index.html successfully.
+[2026-03-19 16:28:43] Fetching Google Scholar data for ID: Um_jCEMAAAAJ...
+[2026-03-19 16:28:44] Updated publications.html successfully.
+[2026-03-19 16:28:44] Successfully updated publications from Google Scholar.
+[2026-03-19 16:28:44] Updated index.html successfully.
+[2026-03-19 16:28:44] Successfully injected metrics grid into index.html
+[2026-03-19 16:28:44] --- Update Complete! ---
+[2026-03-19 16:28:44] --- Starting Auto-Deploy to GitHub ---
