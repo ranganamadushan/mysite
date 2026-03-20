@@ -30,7 +30,7 @@ You have three primary ways to update your information across the site depending
 To effortlessly update your Timeline or Educational degree history:
 1. Go to your **LinkedIn Profile** in your browser.
 2. Click the **"More..."** button and select **"Save to PDF"**.
-3. Save the downloaded file directly as `Profile.pdf` inside this folder (`g:\My Drive\MYSITE\`), replacing the old one.
+3. Save the downloaded file directly as `Profile.pdf` inside this folder (`g:\My Drive\MYSITE\engine\`), replacing the old one.
 4. Run the engine (see deployment instructions below). The script will parse the PDF natively and extract your newest jobs seamlessly!
 
 ### 2. Custom Data (`data.json`)
@@ -53,6 +53,7 @@ Whenever you edit `data.json` or swap out your `Profile.pdf`, follow these 2 sim
 2. Run the automation engine:
    ```cmd
    python update_portfolio.py
+   (Note: Always run this explicitly from inside the `engine` folder!)
    ```
 
 ### What exactly does the engine do?

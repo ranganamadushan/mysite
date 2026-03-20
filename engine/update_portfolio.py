@@ -176,7 +176,7 @@ def rebuild_html_from_local():
                         <p>{ed.get('description','')}</p>
                     </div>
                 </div>\n'''
-    replace_in_file('education.html', '<!-- EDUCATION_START -->', '<!-- EDUCATION_END -->', edu_html)
+    replace_in_file('../pages/education.html', '<!-- EDUCATION_START -->', '<!-- EDUCATION_END -->', edu_html)
 
     # Generate Experience
     exp_html = ""
@@ -188,7 +188,7 @@ def rebuild_html_from_local():
                         <p>{exp.get('description','')}</p>
                     </div>
                 </div>\n'''
-    replace_in_file('experience.html', '<!-- EXPERIENCE_START -->', '<!-- EXPERIENCE_END -->', exp_html)
+    replace_in_file('../pages/experience.html', '<!-- EXPERIENCE_START -->', '<!-- EXPERIENCE_END -->', exp_html)
     
     # Generate Projects
     proj_html = ""
@@ -208,7 +208,7 @@ def rebuild_html_from_local():
                         {tags_html}
                     </div>
                 </a>\n'''
-    replace_in_file('projects.html', '<!-- PROJECTS_START -->', '<!-- PROJECTS_END -->', proj_html)
+    replace_in_file('../pages/projects.html', '<!-- PROJECTS_START -->', '<!-- PROJECTS_END -->', proj_html)
 
     # Generate Applications
     app_html = ""
@@ -230,7 +230,7 @@ def rebuild_html_from_local():
                         {tags_html}
                     </div>
                 </a>\n'''
-    replace_in_file('applications.html', '<!-- APPLICATIONS_START -->', '<!-- APPLICATIONS_END -->', app_html)
+    replace_in_file('../pages/applications.html', '<!-- APPLICATIONS_START -->', '<!-- APPLICATIONS_END -->', app_html)
 
     # Index Quick Info
     latest_job = data.get('experience', [{}])[0] if data.get('experience') else {}
@@ -250,7 +250,7 @@ def rebuild_html_from_local():
                         {interests_html}
                     </div>
                 </div>'''
-    replace_in_file('index.html', '<!-- QUICK_INFO_START -->', '<!-- QUICK_INFO_END -->', quick_info)
+    replace_in_file('../index.html', '<!-- QUICK_INFO_START -->', '<!-- QUICK_INFO_END -->', quick_info)
 
 
 def update_scholar(scholar_id):
@@ -290,7 +290,7 @@ def update_scholar(scholar_id):
                     <div class="pub-venue" style="font-size: 0.85rem; color: #888; font-style: italic;"><i class="fas fa-journal-whills" style="margin-right: 0.3rem;"></i> {venue}</div>
                 </a>\n'''
                 
-        replace_in_file('publications.html', '<!-- PUBLICATIONS_START -->', '<!-- PUBLICATIONS_END -->', pubs_html)
+        replace_in_file('../pages/publications.html', '<!-- PUBLICATIONS_START -->', '<!-- PUBLICATIONS_END -->', pubs_html)
         print("Successfully updated publications from Google Scholar.")
         
         # Build Stats Grid
@@ -337,7 +337,7 @@ def update_scholar(scholar_id):
                     </div>
                 </div>
                 <!-- STATS_END -->'''
-        replace_in_file('index.html', '<!-- STATS_START -->', '<!-- STATS_END -->', stats_html)
+        replace_in_file('../index.html', '<!-- STATS_START -->', '<!-- STATS_END -->', stats_html)
         print("Successfully injected metrics grid into index.html")
         
     except Exception as e:
@@ -366,16 +366,16 @@ if __name__ == "__main__":
             
         print("--- Starting Auto-Deploy to GitHub ---")
         try:
-            subprocess.run([git_path, 'add', '.'], check=True)
+            subprocess.run([git_path, 'add', '.', '--all'], cwd='..', check=True)
             commit_msg = f"Automated Portfolio Update: {datetime.now().strftime('%Y-%m-%d %H:%M')}"
-            result = subprocess.run([git_path, 'commit', '-m', commit_msg], capture_output=True, text=True)
+            result = subprocess.run([git_path, 'commit', '-m', commit_msg], cwd='..', capture_output=True, text=True)
             
             if "nothing to commit" in result.stdout or "nothing to commit" in result.stderr:
                 print("No files were changed. Skipping deployment push.")
                 return
                 
             print("Pushing files securely to GitHub repository...")
-            subprocess.run([git_path, 'push', '-u', 'origin', 'main'], check=True)
+            subprocess.run([git_path, 'push', '-u', 'origin', 'main'], cwd='..', check=True)
             print("Successfully explicitly deployed website to live server!")
         except Exception as e:
             print(f"Failed to auto-deploy to Github: {e}")
