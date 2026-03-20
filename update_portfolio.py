@@ -272,6 +272,8 @@ def update_scholar(scholar_id):
             print("No articles found on Scholar page.")
             return
 
+        import urllib.parse
+        
         for article in articles:
             title_elem = article.find('a', class_='gsc_a_at')
             title = title_elem.text if title_elem else "Unknown Title"
@@ -279,12 +281,35 @@ def update_scholar(scholar_id):
             meta = article.find_all('div', class_='gs_gray')
             authors = meta[0].text if len(meta) > 0 else ""
             venue = meta[1].text if len(meta) > 1 else ""
+            
+            scholar_link = "https://scholar.google.com" + title_elem['href'] if title_elem and 'href' in title_elem.attrs else "#"
+            doi = ""
+            pub_link = scholar_link
+            
+            # Cross-reference the Scholar Title natively against the Global Crossref DB to explicitly discover actual DOIs
+            try:
+                title_encoded = urllib.parse.quote(title)
+                c_url = f"https://api.crossref.org/works?query.title={title_encoded}&select=DOI,URL,title&rows=1"
+                c_resp = requests.get(c_url, timeout=4)
+                if c_resp.status_code == 200:
+                    items = c_resp.json().get('message', {}).get('items', [])
+                    if items:
+                        title_words = set(title.lower().split())
+                        found_words = set(items[0].get('title', [''])[0].lower().split())
+                        if len(title_words.intersection(found_words)) >= 2:
+                            doi = items[0].get('DOI', '')
+                            pub_link = items[0].get('URL', scholar_link)
+            except Exception as e:
+                pass
                 
-            pubs_html += f'''                <div class="pub-item">
-                    <div class="pub-title">{title}</div>
-                    <div class="pub-authors">{authors}</div>
-                    <div class="pub-venue"><i class="fas fa-journal-whills"></i> {venue}</div>
-                </div>\n'''
+            doi_html = f'<div class="pub-doi" style="margin-top: 0.6rem; font-size: 0.85rem; color: var(--accent);"><i class="fas fa-barcode"></i> DOI: {doi}</div>' if doi else ''
+            
+            pubs_html += f'''                <a href="{pub_link}" target="_blank" class="pub-item" style="display: block; text-decoration: none; padding: 1.5rem; background: rgba(255,255,255,0.03); border-radius: 8px; margin-bottom: 1.2rem; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.2s, border-color 0.2s;">
+                    <div class="pub-title" style="color: #fff; font-size: 1.15rem; font-weight: 600; margin-bottom: 0.4rem;">{title} <i class="fas fa-external-link-alt" style="font-size: 0.8rem; margin-left: 0.4rem; color: var(--text-secondary);"></i></div>
+                    <div class="pub-authors" style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.3rem;">{authors}</div>
+                    <div class="pub-venue" style="font-size: 0.85rem; color: #888; font-style: italic;"><i class="fas fa-journal-whills" style="margin-right: 0.3rem;"></i> {venue}</div>
+                    {doi_html}
+                </a>\n'''
                 
         replace_in_file('publications.html', '<!-- PUBLICATIONS_START -->', '<!-- PUBLICATIONS_END -->', pubs_html)
         print("Successfully updated publications from Google Scholar.")
