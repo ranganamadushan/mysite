@@ -310,7 +310,7 @@ def update_scholar(scholar_id):
         visits = data.get('site_visits', 120)
         
         stats_html = f'''<!-- STATS_START -->
-                <div class="stats-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: 1.5rem; width: 100%;">
+                <div class="stats-grid" >
                     <div class="stat-box" style="background: rgba(255,255,255,0.03); padding: 0.8rem; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.1);">
                         <div style="font-size: 1.3rem; font-weight: 800; color: var(--accent); margin-bottom: 0.2rem;">{pub_count}</div>
                         <div style="font-size: 0.7rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px;">Publications</div>

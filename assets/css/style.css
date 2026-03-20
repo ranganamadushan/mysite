@@ -443,3 +443,47 @@ footer {
     color: var(--accent);
     font-size: 0.85rem;
 }
+
+/* --- Comprehensive Mobile Responsiveness natively --- */
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-image img, .hero-image::before {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 450px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+}
