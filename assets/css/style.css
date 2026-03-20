@@ -108,10 +108,11 @@ nav ul li a:hover, nav ul li a.active {
         text-align: center;
     }
     .hero-content {
-        order: 2;
+        order: 1;
     }
     .hero-image {
-        order: 1;
+        order: 2;
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
 }

@@ -182,3 +182,22 @@
 [2026-03-20 10:46:51] Successfully injected metrics grid into index.html
 [2026-03-20 10:46:51] --- Update Complete! ---
 [2026-03-20 10:46:51] --- Starting Auto-Deploy to GitHub ---
+[2026-03-20 10:46:52] Pushing files securely to GitHub repository...
+[2026-03-20 10:46:54] Successfully explicitly deployed website to live server!
+[2026-03-20 10:51:56] --- Starting Portfolio Automation ---
+[2026-03-20 10:51:56] --- Parsing LinkedIn Profile.pdf ---
+[2026-03-20 10:51:56] Extracted 5 education items and 21 experience items.
+[2026-03-20 10:51:56] Updated data.json successfully with new PDF data!
+[2026-03-20 10:51:56] Loading Experience & Education from data.json...
+[2026-03-20 10:51:56] Updated ../pages/education.html successfully.
+[2026-03-20 10:51:56] Updated ../pages/experience.html successfully.
+[2026-03-20 10:51:56] Updated ../pages/projects.html successfully.
+[2026-03-20 10:51:56] Updated ../pages/applications.html successfully.
+[2026-03-20 10:51:56] Updated ../index.html successfully.
+[2026-03-20 10:51:56] Fetching Google Scholar data for ID: Um_jCEMAAAAJ...
+[2026-03-20 10:51:56] Updated ../pages/publications.html successfully.
+[2026-03-20 10:51:56] Successfully updated publications from Google Scholar.
+[2026-03-20 10:51:56] Updated ../index.html successfully.
+[2026-03-20 10:51:56] Successfully injected metrics grid into index.html
+[2026-03-20 10:51:56] --- Update Complete! ---
+[2026-03-20 10:51:56] --- Starting Auto-Deploy to GitHub ---
